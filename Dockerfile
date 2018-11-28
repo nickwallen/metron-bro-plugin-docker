@@ -1,4 +1,5 @@
 FROM centos:7
+WORKDIR /root
 
 # install development tools
 RUN yum -y groupinstall "Development Tools"

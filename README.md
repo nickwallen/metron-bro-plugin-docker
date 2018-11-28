@@ -27,3 +27,20 @@ Follow the [installation](https://github.com/apache/metron-bro-plugin-kafka#inst
     ```
     bro -N Apache::Kafka
     ```
+
+### Install from Source
+
+1. Download the source code.
+
+1. Build and install from source.
+    ```
+    BRO_SRC=/root/bro-2.5.5/
+    ./configure --bro-dist=$BRO_SRC
+    make
+    make install
+    ```
+
+1. Validate the install.
+    ```
+    bro -N Apache::Kafka
+    ```
